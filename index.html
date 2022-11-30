@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Dev - Cardume Digital</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- CSS BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Icons BootStrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600;700;800&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Proprietario -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-white" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-cabecalho.svg" alt="logo cardume digital" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link openSans text-uppercase" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link openSans text-uppercase" href="#servico">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link openSans text-uppercase" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- carousel banner -->
+        <section id="banner">
+            <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/banner.jpg" class="img-fluid" alt="banner">
+                        <div class="carousel-caption">
+                            <h5 class="dancingScript">Tenha um site<br> rápido, seguro e otimizado</h5>
+                            <p>Solicite um orçamento sem compromisso agora mesmo!</p>
+                            <a href="#contato" class="btn bg-white openSans">solicitar</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner.jpg" class="img-fluid" alt="banner">
+                        <div class="carousel-caption">
+                            <h5 class="dancingScript">Tenha um site<br> rápido, seguro e otimizado</h5>
+                            <p>Solicite um orçamento sem compromisso agora mesmo!</p>
+                            <a href="#contato" class="btn bg-white openSans">solicitar</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner.jpg" class="img-fluid" alt="banner">
+                        <div class="carousel-caption">
+                            <h5 class="dancingScript">Tenha um site<br> rápido, seguro e otimizado</h5>
+                            <p>Solicite um orçamento sem compromisso agora mesmo!</p>
+                            <a href="#contato" class="btn bg-white openSans">solicitar</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="img/homem-sobre.png" alt="homen sobre" class="img-fluid d-none d-lg-block">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h1 class="openSans text-uppercase">Quem somos</h1>
+                        <h2 class="dancingScript">Conheça a Cardume Digital</h2>
+                        <p class="roboto">A Cardume Digital é uma empresa de tecnologia focada no desenvolvimento de
+                            sites, com
+                            profissionais qualificados e mais de 8 anos de mercado.</p>
+                        <p class="roboto">
+                            Estamos localizados na serra gaúcha,
+                            mas atendemos empresas de qualquer lugar do mundo.
+                        </p>
+                        <p class="roboto">
+                            Nesse imenso oceano que é a internet,
+                            mais de 200 empresas já alcançaram resultados incríveis nadando ao nosso lado.
+                        </p>
+                        <p class="roboto">
+                            Junte-se à Cardume e explore um oceano de oportunidades!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- servico -->
+        <section id="servico">
+            <div class="container">
+                <div class="row" id="servico-title">
+                    <div class="col-12">
+                        <h1 class="openSans text-uppercase text-center text-uppercase">criaçao de sites responsivos</h1>
+                        <p class="roboto text-center">Desenvolvemos sites de alta performance e oferecemos uma estrutura
+                            completa
+                            para gerar
+                            resultados para sua empresa.</p>
+                    </div>
+                </div>
+
+                <div class="row" id="servico-cards">
+                    <div class="col-12 col-lg-4">
+                        <img src="img/landing-page.jpg" alt="" class="img-fluid">
+                        <p class="openSans">Landing Page</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <img src="img/multi-page.jpg" alt="" class="img-fluid">
+                        <p class="openSans">Site MultiPage</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <img src="img/one-page.jpg" alt="" class="img-fluid">
+                        <p class="openSans">Site OnePage</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contato -->
+        <section id="contato">
+            <div class="container">
+                <div class="row" id="contato-title">
+                    <div class="col-12">
+                        <h1 class="dancingScript text-center">Solicite um Orçamento</h1>
+                        <p class="roboto text-center">Envie-nos uma mensagem ou entre em contato através de nossos
+                            canais de
+                            atendimento</p>
+                    </div>
+                </div>
+
+                <div class="row" id="contato-conteudo">
+                    <div class="col-12 col-lg-6">
+                        <form novalidate class="needs-validation">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Nome *" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Cidade/UF">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="tel" class="form-control" placeholder="Telefone *" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="E-mail">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <textarea class="form-control" rows="6" placeholder="Mensagem"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="checkbox">
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Ao informar meus dados, eu concordo com a <span>Política de
+                                                Privacidade</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 btn-enviar">
+                                    <button class="btn btn-primary openSans" type="submit">enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-none d-lg-block" id="contato-social">
+                        <div class="social-item">
+                            <div class="bg-img">
+                                <a href="https://api.whatsapp.com/send?phone=5554996538880" target="_blank"> <img
+                                        src="img/icone-whatsapp.svg" alt="icone-whatsapp"></a>
+                            </div>
+
+                            <a href="https://api.whatsapp.com/send?phone=5554996538880" target="_blank"
+                                class="text-decoration-none">
+                                <p>54 9 9653 8880</p>
+                            </a>
+
+                        </div>
+                        <div class="social-item">
+                            <div class="bg-img">
+                                <a href="tel:+54 9 9653 8880" target="_blank"> <img src="img/icone-telefone.svg"
+                                        alt="icon telefone">
+                                </a>
+                            </div>
+                            <a href="tel:+54 9 9653 8880" target="_blank" class="text-decoration-none">
+                                <p>54 9 9653 8880</p>
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <div class="bg-img">
+                                <a href="mailto:contato@cardume.digital" target="_blank">
+                                    <img src="img/icone-email.svg" alt="icon email"></a>
+                            </div>
+                            <a href="mailto:contato@cardume.digital" target="_blank" class="text-decoration-none">
+                                <p>contato@cardume.digital</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- map -->
+        <section id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1748.3620784478196!2d-51.61034894174351!3d-28.787486444868367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951dcf271125e0d7%3A0xd083d53cf3a0720f!2sCardume%20Digital%20-%20Websites%20de%20Alta%20Performance!5e0!3m2!1spt-BR!2sbr!4v1669836524703!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <img src="img/logo-rodape.svg" alt="logo cardume digital">
+            <div class="social">
+                <h1 class="openSans">siga-nos</h1>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cardumeagencia/" target="_blank">
+                        <img src="img/icone-facebook.svg" alt="icon facebook">
+                    </a>
+                    <a href="https://www.instagram.com/cardume.digital/" target="_blank">
+                        <img src="img/icone-instagram.svg" alt="icon instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- validaçao formulario contato -->
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>
