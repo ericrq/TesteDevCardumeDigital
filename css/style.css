@@ -18,6 +18,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* ajuste posiçao anchor */
+section {
+  scroll-margin-top: 250px;
+}
+
 /* header */
 header nav ul li .nav-link {
   font-weight: bold;
@@ -316,6 +321,11 @@ footer a:last-child {
 }
 
 @media (max-width: 992px) {
+  /* ajuste posiçao anchor */
+  section {
+    scroll-margin-top: 250px;
+  }
+
   #navbar-items ul li {
     padding: 0;
     text-align: center;
@@ -350,7 +360,7 @@ footer a:last-child {
   }
 
   #banner .carousel .carousel-inner .carousel-item .img-fluid {
-    height: 100vh;
+    height: 94vh;
     object-fit: cover;
   }
 
