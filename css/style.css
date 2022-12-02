@@ -38,6 +38,8 @@ header nav ul li .nav-link {
 header nav .navbar-brand img {
   padding: 8px 0 8px 0;
   margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 header nav .navbar-collapse {
@@ -343,6 +345,10 @@ footer a:last-child {
     margin-right: 0;
   }
 
+  header .navbar-toggler {
+    padding: 0 4px 0 4px;
+  }
+
   /* banner */
   #banner {
     margin-top: 48px;
@@ -362,6 +368,16 @@ footer a:last-child {
   #banner .carousel .carousel-inner .carousel-item .img-fluid {
     height: 94vh;
     object-fit: cover;
+  }
+
+  #banner .carousel-control-next,
+  #banner .carousel-control-prev {
+    display: none;
+  }
+
+  #banner .carousel-caption {
+    width: 100%;
+    left: 0;
   }
 
   /* footer */
