@@ -106,6 +106,14 @@ header .navbar {
   border: none;
   padding: 9px 0 9px 0;
   font-weight: bold;
+  background-color: #fff;
+  border: 3px solid #fff;
+}
+
+#banner .carousel .carousel-inner .carousel-item a:hover {
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 /* sobre */
@@ -186,6 +194,7 @@ header .navbar {
 #servico #servico-cards img {
   transition: all 0.5s ease;
 }
+
 #servico #servico-cards img:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -248,6 +257,12 @@ header .navbar {
   border: 3px solid #00b0ff;
   font-weight: 800;
   margin-top: 20px;
+}
+
+#contato #contato-conteudo form button:hover {
+  background: transparent;
+  color: #00b0ff;
+  transition: all 0.5s ease-in-out;
 }
 
 #contato #contato-conteudo #contato-social .social-item p {
@@ -401,7 +416,6 @@ footer a:last-child {
 
   footer img:not(.social img) {
     margin-top: 50px;
-    width: 70%;
   }
 
   footer .social img {
