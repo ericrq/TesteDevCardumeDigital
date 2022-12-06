@@ -377,12 +377,10 @@ header .navbar {
 
 /* footer */
 footer {
-  background: transparent -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(var(--dark-blue)),
-      to(#00eeff)
+  background: transparent -webkit-linear-gradient(
+      left,
+      var(--dark-blue) 0%,
+      #00eeff 100%
     ) 0% 0% no-repeat padding-box;
   background: transparent -o-linear-gradient(
       left,
