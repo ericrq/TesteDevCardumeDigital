@@ -2,7 +2,10 @@
 
 :root {
   /* color */
-  --link-color: #62738a;
+  --gray: #62738a;
+  --light-blue: #00b0ff;
+  --dark-blue: #0056ff;
+  --white: #ffffff;
 }
 
 /* fonts */
@@ -26,12 +29,12 @@ section {
 /* header */
 header nav ul li .nav-link {
   font-weight: bold;
-  color: var(--link-color);
+  color: var(--gray);
   font-size: 1.68em;
   letter-spacing: -0.54px;
 }
 
-#navbar-items ul li {
+header #navbar-items ul li {
   padding: 50px 0 50px 0;
 }
 
@@ -66,19 +69,20 @@ header .navbar {
   margin-top: 155px;
 }
 
-#banner .carousel .carousel-inner .carousel-item::before {
+#banner .carousel-item::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: transparent linear-gradient(293deg, #0056ff 0%, #00eeff 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(293deg, var(--dark-blue) 0%, #00eeff 100%) 0% 0% no-repeat
+    padding-box;
   opacity: 0.5;
 }
 
-#banner .carousel .carousel-inner .carousel-item .carousel-caption {
+#banner .carousel-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,33 +90,38 @@ header .navbar {
   height: 100%;
 }
 
-#banner .carousel .carousel-inner .carousel-item h5 {
+#banner .carousel-item h5 {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: -0.54px;
   width: 100%;
+  text-shadow: 0px 3px 6px #00000029;
 }
 
-#banner .carousel .carousel-inner .carousel-item p {
+#banner .carousel-item p {
   font-size: 1.87em;
   letter-spacing: -0.54px;
+  text-shadow: 0px 3px 6px #00000029;
 }
 
-#banner .carousel .carousel-inner .carousel-item a {
+#banner .carousel-item a {
   border-radius: 38px;
   font-size: 1.62em;
-  color: #00b0ff;
+  color: var(--light-blue);
   width: 200px;
   border: none;
   padding: 9px 0 9px 0;
   font-weight: bold;
-  background-color: #fff;
-  border: 3px solid #fff;
+  background-color: var(--white);
+  border: 3px solid var(--white);
+  /* transiçao para quando tirar o mouse de cima do botao, fazendo uma animaçao mais suave */
+  transition: all 0.5s ease-in-out;
 }
 
-#banner .carousel .carousel-inner .carousel-item a:hover {
-  background-color: transparent;
-  color: #fff;
+/* transiçao e escala para hover, e active para o mobile */
+#banner .carousel-item a:hover,
+#banner .carousel-item a:active {
+  transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
 
@@ -130,20 +139,20 @@ header .navbar {
 #sobre h1 {
   font-size: 1.37em;
   font-weight: 600;
-  color: #62738a;
+  color: var(--gray);
   margin-top: 50px;
 }
 
 #sobre h2 {
   font-size: 2.87em;
   font-weight: 700;
-  color: #0056ff;
+  color: var(--dark-blue);
 }
 
 #sobre p {
   font-size: 1.25em;
   font-weight: 400;
-  color: #62738a;
+  color: var(--gray);
 }
 
 #sobre p:last-child {
@@ -155,7 +164,6 @@ header .navbar {
 }
 
 /* servicos */
-
 #servico {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -187,12 +195,13 @@ header .navbar {
 #servico #servico-cards p {
   font-size: 1.75em;
   font-weight: bold;
-  color: #62738a;
+  color: var(--gray);
   text-align: center;
   margin-top: 15px;
 }
 #servico #servico-cards img {
   transition: all 0.5s ease;
+  margin-top: 30px;
 }
 
 #servico #servico-cards img:hover {
@@ -211,19 +220,19 @@ header .navbar {
 
 #contato h1 {
   font-size: 3.75em;
-  color: #0056ff;
+  color: var(--dark-blue);
   font-weight: bold;
 }
 
 #contato p {
   font-size: 1.25em;
-  color: #62738a;
+  color: var(--gray);
   font-weight: 400;
 }
 
 #contato #contato-conteudo #checkbox {
   font-size: 1em;
-  color: #62738a;
+  color: var(--gray);
   font-weight: 400;
 }
 
@@ -251,43 +260,54 @@ header .navbar {
 #contato #contato-conteudo form button {
   border-radius: 38px;
   font-size: 1.625em;
-  color: #ffffff;
-  background-color: #00b0ff;
+  color: var(--white);
+  background-color: var(--light-blue);
   width: 200px;
-  border: 3px solid #00b0ff;
+  border: 3px solid var(--light-blue);
   font-weight: 800;
   margin-top: 20px;
-}
-
-#contato #contato-conteudo form button:hover {
-  background: transparent;
-  color: #00b0ff;
   transition: all 0.5s ease-in-out;
 }
 
-#contato #contato-conteudo #contato-social .social-item p {
+#contato #contato-conteudo form button:hover,
+#contato #contato-conteudo form button:active {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+#contato .social-item p {
   font-size: 1.625em;
-  color: #62738a;
+  color: var(--gray);
   font-weight: bold;
   margin-left: 20px;
   margin-bottom: 0;
 }
 
-#contato #contato-conteudo #contato-social .social-item {
+#contato .social-item {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
   margin-left: 50px;
   position: relative;
 }
-#contato #contato-conteudo #contato-social .social-item .bg-img {
-  background-color: #ffffff;
+
+#contato .social-item .bg-img {
+  background-color: var(--white);
   border-radius: 50%;
   width: 65px;
   height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* transiçao para quando tirar o mouse de cima da img, fazendo uma animaçao mais suave */
+  transition: all 0.5s ease-in-out;
+}
+
+/* transiçao e escala para hover, e active para o mobile */
+#contato .social-item .bg-img:hover,
+#contato .social-item .bg-img:active {
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
 }
 
 #contato #contato-conteudo {
@@ -303,8 +323,9 @@ header .navbar {
 
 /* footer */
 footer {
-  background: transparent linear-gradient(90deg, #0056ff 0%, #00eeff 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent
+    linear-gradient(90deg, var(--dark-blue) 0%, #00eeff 100%) 0% 0% no-repeat
+    padding-box;
 }
 
 footer img:not(.social img) {
@@ -330,20 +351,33 @@ footer h1 {
   display: flex;
   align-items: center;
   margin-bottom: 0;
-  color: #ffffff;
+  color: var(--white);
 }
 
 footer a:last-child {
   margin-left: 14px;
 }
 
+/* transiçao para quando tirar o mouse de cima da img, fazendo uma animaçao mais suave */
+footer .social-icons img {
+  transition: all 0.5s ease-in-out;
+}
+
+/* transiçao e escala para hover, e active para o mobile */
+footer .social-icons img:hover,
+footer .social-icons img:active {
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
+}
+
+/* configuraçoes tablet até mobile */
 @media (max-width: 992px) {
   /* ajuste posiçao anchor */
   section {
     scroll-margin-top: 250px;
   }
 
-  #navbar-items ul li {
+  header nav #navbar-items ul li {
     padding: 0;
     text-align: center;
   }
@@ -368,19 +402,19 @@ footer a:last-child {
   #banner {
     margin-top: 48px;
   }
-  #banner .carousel .carousel-inner .carousel-item h5 {
+  #banner .carousel-item h5 {
     font-size: 3em;
   }
 
-  #banner .carousel .carousel-inner .carousel-item p {
+  #banner .carousel-item p {
     font-size: 1.25em;
   }
 
-  #banner .carousel .carousel-inner .carousel-item a {
+  #banner .carousel-item a {
     font-size: 1.62em;
   }
 
-  #banner .carousel .carousel-inner .carousel-item .img-fluid {
+  #banner .carousel-item .img-fluid {
     height: 94vh;
     object-fit: cover;
   }
@@ -405,11 +439,11 @@ footer a:last-child {
 
   footer h1 {
     margin-right: 0;
-    color: #00b0ff;
+    color: var(--light-blue);
   }
 
   footer h1,
-  img {
+  footer img {
     padding: 0;
     margin-top: 15px;
   }
@@ -423,11 +457,10 @@ footer a:last-child {
   }
 
   footer {
-    background: #0056ff 0% 0% no-repeat padding-box;
+    background: var(--dark-blue) 0% 0% no-repeat padding-box;
   }
 
   /* contato */
-
   #contato {
     background: #ebf0f8 0% 0% no-repeat padding-box;
   }
@@ -497,6 +530,7 @@ footer a:last-child {
   }
 }
 
+/* ajuste de fontes no banner para tamanho especificos de tela */
 @media (max-width: 351px) {
   #contato h1 {
     font-size: 2.2em;
@@ -505,7 +539,7 @@ footer a:last-child {
 }
 
 @media (max-width: 629px) {
-  #banner .carousel .carousel-inner .carousel-item h5 {
+  #banner .carousel-item h5 {
     font-size: 2.5em;
   }
 
